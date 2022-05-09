@@ -17,19 +17,22 @@
     <div class="container">
         <div class="controls">
             <label for="spacing">Spacing:</label>
+            <!-- I used name for css variables -->
             <input type="range" name="spacing" value="10" min="0" max="100" data-sizing="px">
             <br>
             <label for="blur">Blur:</label>
-            <input type="range" name="Blur" value="0" min="0" max="25" data-sizing="px">
+            <input type="range" name="blur" value="0" min="0" max="25" data-sizing="px">
             <br>
-            <label for="color-picker">Base Color:</label>
-            <input type="color" name="color-picker" value="rgb(25, 16, 71)">
+            <label for="base">Base Color:</label>
+            <input type="color" name="base" colorpick-eyedropper-active="false">
         </div>
 
         <!-- image -->
         <img src="https://images.unsplash.com/photo-1633840646429-ccf507814ac9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
             alt="MacBook Picture" class="pic">
     </div>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
