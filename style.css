@@ -26,6 +26,17 @@ h2 {
     color: white;
 }
 
+h4 {
+    text-align: center;
+    margin-top: .5em;
+}
+
+a,
+a:visited {
+    color: var(--base);
+    text-decoration: none;
+}
+
 .hl {
     color: var(--base);
 }
