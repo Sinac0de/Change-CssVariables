@@ -20,11 +20,22 @@
             <!-- I used name for css variables -->
             <input type="range" name="spacing" value="10" min="0" max="100" data-sizing="px">
             <br>
+            <label for="brightness">Brightness:</label>
+            <input type="range" name="brightness" value="100" min="0" max="200" data-sizing="%">
+            <br>
+            <label for="contrast">Contrast:</label>
+            <input type="range" name="contrast" value="100" min="0" max="200" data-sizing="%">
+            <br>
             <label for="blur">Blur:</label>
             <input type="range" name="blur" value="0" min="0" max="25" data-sizing="px">
             <br>
+            <label for="grayscale">Grayscale:</label>
+            <input type="range" name="grayscale" value="0" min="0" max="100" data-sizing="%">
+            <br>
             <label for="base">Base Color:</label>
-            <input type="color" name="base" colorpick-eyedropper-active="false">
+            <input class="color-picker" type="color" name="base" colorpick-eyedropper-active="false">
+            <br>
+            <button class="reset-btn" value="reset">RESET ALL</button>
         </div>
 
         <!-- image -->
