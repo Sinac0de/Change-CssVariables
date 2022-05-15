@@ -11,6 +11,9 @@
     --blur: 0;
     --base: rgb(161, 200, 255);
     --spacing: 10px;
+    --brightness: 100%;
+    --contrast: 100%;
+    --grayscale: 0;
 }
 
 body {
@@ -54,11 +57,24 @@ a:visited {
     z-index: 5;
 }
 
+.reset-btn {
+    background-color: rgb(161, 200, 255);
+    border-radius: 15px;
+    padding: .5em;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.color-picker,
+.reset-btn {
+    cursor: pointer;
+}
+
 .pic {
     height: 500px;
     background-color: var(--base);
     padding: var(--spacing);
-    filter: blur(var(--blur));
+    filter: blur(var(--blur)) brightness(var(--brightness))contrast(var(--contrast)) grayscale(var(--grayscale));
     position: relative;
     z-index: 1;
 }
