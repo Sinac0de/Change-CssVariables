@@ -78,3 +78,27 @@ a:visited {
     position: relative;
     z-index: 1;
 }
+
+@media screen and (max-width:1024px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .controls {
+        position: absolute;
+        bottom: 35px;
+        width: 95%;
+    }
+
+    .pic {
+        width: 95%;
+        height: unset;
+        display: block;
+    }
+
+    h4 {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+}
