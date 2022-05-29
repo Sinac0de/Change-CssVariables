@@ -5,7 +5,8 @@ const controls = document.querySelectorAll('.controls input');
 const resetBtn = document.querySelector('.reset-btn');
 const pic = document.querySelector(".pic");
 const inputs = document.querySelectorAll("input");
-
+const controlsContainer = document.querySelector(".controls");
+const showControls = document.querySelector(".show-controls");
 
 /*-----
 EVENT LISTENERS
@@ -16,6 +17,8 @@ controls.forEach(input => {
 
 resetBtn.addEventListener("click", resetProperties);
 
+showControls.addEventListener("click", showControlsDiv);
+
 /*-----
 Functions
 -------*/
@@ -23,6 +26,10 @@ function handleUpdate(e) {
     // dataset will give you an object of data- attributes 
     const suffix = this.dataset.sizing || ""; //to prevent undefind value and also give px at the end of styles.
     document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix); // change the style of root element(entire document) 
+}
+
+function showControlsDiv(e) {
+    controlsContainer.classList.toggle("controls-show");
 }
 
 function resetProperties(e) {
