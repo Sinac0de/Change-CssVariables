@@ -54,7 +54,7 @@ a:visited {
 }
 
 .controls {
-    background-color: rgb(53, 53, 90);
+    background-color: rgba(53, 53, 90, 0.1);
     padding: 1em;
     line-height: 2.5em;
     position: relative;
@@ -104,12 +104,26 @@ a:visited {
         text-align: left;
     }
 
+    .container {
+        flex-direction: column;
+        min-height: 50vh;
+    }
+
+    .container img {
+        width: 100%;
+        order: 1;
+    }
+
     .controls {
+        order: 2;
+    }
+
+    /* .controls {
         position: absolute;
         bottom: 0;
         width: 95%;
         line-height: 1.3em;
-    }
+    } */
 
     /* show controls btn */
     .show-controls {
@@ -126,9 +140,9 @@ a:visited {
         display: block;
     }
 
-    h4 {
+    /* h4 {
         position: absolute;
         bottom: 10px;
         width: 100%;
-    }
+    } */
 }
