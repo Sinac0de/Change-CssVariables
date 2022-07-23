@@ -118,13 +118,6 @@ a:visited {
         order: 2;
     }
 
-    /* .controls {
-        position: absolute;
-        bottom: 0;
-        width: 95%;
-        line-height: 1.3em;
-    } */
-
     /* show controls btn */
     .show-controls {
         display: inline-block;
@@ -139,10 +132,4 @@ a:visited {
         height: unset;
         display: block;
     }
-
-    /* h4 {
-        position: absolute;
-        bottom: 10px;
-        width: 100%;
-    } */
 }
