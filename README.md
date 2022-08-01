@@ -1,5 +1,5 @@
 # Change-CssVariables
-A simple webpage that allows you to play with some basic css variables and change filters and spacing of the image.
+A simple webpage that use css variables & JavaScript to change filters and spacing on an image.
 this project is based on the projects of the <a href="https://javascript30.com/">JAVASCRIPT30</a> website.
 # DEMO
 Play live demo <a href="https://changecssvariable.netlify.app/">here</a>
